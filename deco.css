@@ -1,0 +1,53 @@
+body{
+  overflow-x: hidden;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#image-container{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns:auto auto auto auto auto;
+  padding: 10px;
+  min-height: 100%;
+  gap: 2%;
+}
+
+.imgSpeechBox {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #image-container{
+    grid-template-columns:auto auto;
+  }
+}
+.errorClass{
+  margin: 10%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  gap: 4%;
+}
+p{
+  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+
+}
+@media (max-width: 480px) {
+  #image-container{
+    grid-template-columns:auto ;
+  }
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.input-group{
+  margin: 1%;
+  padding-right: 2%;
+}
